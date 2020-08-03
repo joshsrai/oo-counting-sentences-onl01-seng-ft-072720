@@ -5,13 +5,12 @@ class String
   def sentence?
     
   end
-
-    def add_student(student, grade)
-      if roster[grade] == nil 
-        roster[grade] = []
-        roster[grade] << student
+new_sentence = []
+    def sentence?(sentence)
+      if sentence.end_with?(".")
+        true
       else
-        roster[grade] << student
+      false
       end
     end
 
